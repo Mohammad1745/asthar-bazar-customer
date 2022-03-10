@@ -7,7 +7,7 @@
     </div>
     <div class="my-2">
       <div class="mb-1.5">Password</div>
-      <input type="text" v-model="password" class="w-full h-16">
+      <input type="password" v-model="password" class="w-full h-16">
     </div>
     <div class="mt-16 ">
       <button class="bg-green text-sm font-bold w-full h-16">SIGN IN</button>
