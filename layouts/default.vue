@@ -19,7 +19,7 @@
 
 <script>
   import Sidebar from "../components/default/Sidebar";
-  import Navbar from "../components/default/header/Navbar";
+  import Navbar from "../components/default/Navbar";
   import Footer from "../components/default/Footer";
   export  default {
     components: {Sidebar, Navbar, Footer},
