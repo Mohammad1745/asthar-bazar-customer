@@ -26,9 +26,8 @@ export default {
   data() {
     return {
       menus: [
+        {page: "/", title: "HOME"},
         {page: "/signin", title: "SIGN IN"},
-        {page: "/signup", title: "SIGN UP"},
-        {page: "/", title: "RESERVED"},
       ]
     }
   }
