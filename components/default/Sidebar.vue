@@ -10,9 +10,11 @@
         v-for="menu in menus"
         :key="menu.page"
         class="nav-item">
-        <a class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75" href="">
-          {{ menu.title }}
-        </a>
+        <NuxtLink :to="menu.page">
+          <span class="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75">
+            {{ menu.title }}
+          </span>
+        </NuxtLink>
       </li>
     </ul>
   </div>
@@ -24,9 +26,9 @@ export default {
   data() {
     return {
       menus: [
-        {page: "signin", title: "SIGN IN"},
-        {page: "signup", title: "SIGN UP"},
-        {page: "reserved", title: "RESERVED"},
+        {page: "/signin", title: "SIGN IN"},
+        {page: "/signup", title: "SIGN UP"},
+        {page: "/", title: "RESERVED"},
       ]
     }
   }
