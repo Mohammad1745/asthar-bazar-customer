@@ -30,13 +30,10 @@
 <script>
 export default {
   name: "Navbar",
+  props: ['menus'],
   data() {
     return {
       showMenu: false,
-      menus: [
-        {page: "/", title: "HOME"},
-        {page: "signin", title: "SIGN IN"},
-      ]
     }
   },
   methods: {

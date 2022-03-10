@@ -1,11 +1,11 @@
 <template>
   <div class="wrapper">
     <div class="sidebar">
-      <sidebar />
+      <sidebar :menus="menus" />
     </div>
     <div class="content">
       <div class="header">
-        <navbar />
+        <navbar :menus="menus" />
       </div>
       <div class="main">
         <Nuxt />
@@ -22,7 +22,15 @@
   import Navbar from "../components/default/header/Navbar";
   import Footer from "../components/default/Footer";
   export  default {
-    components: {Sidebar, Navbar, Footer}
+    components: {Sidebar, Navbar, Footer},
+    data() {
+      return {
+        menus: [
+          {page: "/", title: "HOME"},
+          {page: "/signin", title: "SIGN IN"},
+        ]
+      }
+    }
   }
 </script>
 

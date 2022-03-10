@@ -23,14 +23,7 @@
 <script>
 export default {
   name: "Sidebar",
-  data() {
-    return {
-      menus: [
-        {page: "/", title: "HOME"},
-        {page: "/signin", title: "SIGN IN"},
-      ]
-    }
-  }
+  props: ['menus']
 }
 </script>
 
