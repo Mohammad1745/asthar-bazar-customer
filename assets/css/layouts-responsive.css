@@ -7,6 +7,12 @@
   .sidebar {
     display: none;
   }
+  .content {
+    margin-left: 0;
+  }
+  .main {
+    margin-top: 70px;
+  }
 }
 @media (max-width: 990px){
   .header {

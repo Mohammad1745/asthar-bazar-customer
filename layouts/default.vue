@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
-    <div class="sidebar">
+    <div class="sidebar fixed">
       <sidebar :menus="menus" />
     </div>
     <div class="content">
-      <div class="header">
+      <div class="header fixed w-full">
         <navbar :menus="menus" />
       </div>
       <div class="main">
