@@ -1,5 +1,5 @@
 <template>
-  <div class="form m-32 px-24 py-20">
+  <div class="form m-10 sm:m-12 md:m-24 lg:m-32 px-12 sm:px-12 md:px-24 py-20">
     <div class="mb-16 text-2xl font-extrabold">Sign In</div>
     <div class="my-2">
       <div class="mb-1.5">Phone</div>
