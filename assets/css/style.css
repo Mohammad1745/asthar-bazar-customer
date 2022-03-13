@@ -1,4 +1,4 @@
-body{
+body {
   max-width: 100%;
   margin: 0;
   overflow-x: hidden;
@@ -6,25 +6,30 @@ body{
 .bg-dark {
   background-color: #1a1a1a;
 }
-.form{
+.bg-semidark {
+  background-color: #343a40;
+}
+.bg-green {
+  background: #bbe432;
+  color: #414141;
+  transition: 0.15s;
+}
+.bg-green:hover {
+  background: #414141;
+  color: #fff;
+}
+.bg-green-inverted {
+  background: #414141;
+  color: #fff;
+  transition: 0.15s;
+}
+.bg-green-inverted:hover {
+  background: #bbe432;
+  color: #414141;
+}
+.text-green {
+  color: #bbe432;
+}
+.form {
   background-color: #edf4f6;
-}
-
-.bg-green{
-  background: #bbe432;
-  color: #414141;
-  transition: 0.15s;
-}
-.bg-green:hover{
-  background: #414141;
-  color: #fff;
-}
-.bg-green-inverted{
-  background: #414141;
-  color: #fff;
-  transition: 0.15s;
-}
-.bg-green-inverted:hover{
-  background: #bbe432;
-  color: #414141;
 }
