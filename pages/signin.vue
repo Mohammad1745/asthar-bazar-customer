@@ -24,6 +24,9 @@
 <script>
 export default {
   name: 'SignInPage',
+  head:{
+    title: "Sing In - Asthar Bazar - Promises 100% Reliance"
+  },
   data() {
     return {
       phone: '',

@@ -13,6 +13,9 @@ import Summary from "../components/default/home/Summary";
 
 export default {
   name: 'IndexPage',
+  head:{
+    title: "Home - Asthar Bazar - Promises 100% Reliance"
+  },
   components: {Banner, ProductList, Summary},
   data () {
     return {
