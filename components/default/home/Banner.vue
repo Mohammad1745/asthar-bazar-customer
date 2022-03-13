@@ -4,15 +4,15 @@
       <div class="discount">
         <div class="amount">{{ discount }}</div>
         <div class="percent">%</div>
-        <div class="text1">upto</div>
-        <div class="text2">Discount on the</div>
+        <div class="text1 font-bold">upto</div>
+        <div class="text2 font-bold">Discount on the</div>
       </div>
-      <div class="text3">New Collection</div>
+      <div class="text3 mb-2">New Collection</div>
       <NuxtLink class="shop-btn bg-green-inverted text-sm font-bold px-5 py-4" :to="buttonLink">
         SHOP NOW
       </NuxtLink>
     </div>
-    <img :src="bannerImage" class="" alt="">
+    <img src="~assets/images/home_slider_1.jpg" class="" alt="">
   </div>
 </template>
 
@@ -24,7 +24,6 @@ export default {
     return {
       discount: 5,
       buttonLink: 'signin',
-      bannerImage: "/_nuxt/assets/images/home_slider_1.jpg"
     }
   }
 }
