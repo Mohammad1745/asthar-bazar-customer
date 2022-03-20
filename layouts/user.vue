@@ -28,6 +28,7 @@
         menus: [
           {page: "/home", title: "HOME"},
           {page: "/shop", title: "SHOP"},
+          {page: "/cart", title: "CART"},
         ]
       }
     }
