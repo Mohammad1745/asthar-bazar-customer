@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import ProductList from "../components/default/home/ProductList";
-import Summary from "../components/default/home/Summary";
+import ProductList from "../components/default/ProductList";
+import Summary from "../components/default/Summary";
 import Header from "../components/default/Header";
 import FilterProducts from "../components/user/shop/ProductFilter";
 

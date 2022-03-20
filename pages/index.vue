@@ -8,8 +8,8 @@
 
 <script>
 import Banner from "../components/default/home/Banner";
-import ProductList from "../components/default/home/ProductList";
-import Summary from "../components/default/home/Summary";
+import ProductList from "../components/default/ProductList";
+import Summary from "../components/default/Summary";
 
 export default {
   name: 'IndexPage',
