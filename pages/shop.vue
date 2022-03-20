@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <Header/>
+    <Header title="Shop" :pages="pages"/>
     <FilterProducts className=""/>
     <ProductList user="true" className="pt-20"/>
     <Summary className="mt-20"/>
@@ -10,18 +10,22 @@
 <script>
 import ProductList from "../components/default/home/ProductList";
 import Summary from "../components/default/home/Summary";
-import Header from "../components/user/shop/Header";
+import Header from "../components/default/Header";
 import FilterProducts from "../components/user/shop/ProductFilter";
 
 export default {
   name: 'ShopPage',
   layout: 'user',
   head:{
-    title: "Home - Asthar Bazar - Promises 100% Reliance"
+    title: "Shop - Asthar Bazar - Promises 100% Reliance"
   },
   components: { Header, FilterProducts, ProductList, Summary },
   data () {
     return {
+      pages: [
+        {name: "Home /", url: "/home"},
+        {name: "Shop", url: "/shop"},
+      ]
     }
   }
 }

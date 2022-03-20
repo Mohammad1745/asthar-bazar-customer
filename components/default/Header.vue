@@ -4,14 +4,14 @@
       <img src="/categories.jpg" alt="" class="">
     </div>
     <div class="parallax-window">
-      <div class="page">Shop</div>
+      <div class="page">{{ title }}</div>
       <div class="directory text-gray-500">
-        <NuxtLink class="text-md py-4" to="/home">
-          Home
-        </NuxtLink>/
-        <NuxtLink class="text-md py-4" to="/shop">
-          Shop
-        </NuxtLink>
+        <NuxtLink
+          v-for="(page, i) in pages"
+          :key="i"
+          class="text-md py-4 mr-1.5"
+          :to="page.url"
+        >{{ page.name }}</NuxtLink>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
 <script>
 export default {
   name: "Header",
-  props: ['className'],
+  props: ['className', 'title', 'pages'],
   data(){
     return {
 
