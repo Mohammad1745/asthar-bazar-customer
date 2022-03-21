@@ -1,16 +1,15 @@
 <template>
   <div class="">
     <Header title="Cart" :pages="pages"/>
-
+    <ProductTable  className="bg-white"/>
     <Summary className="mt-20"/>
   </div>
 </template>
 
 <script>
-import ProductList from "../components/default/ProductList";
-import Summary from "../components/default/Summary";
 import Header from "../components/default/Header";
-import FilterProducts from "../components/user/shop/ProductFilter";
+import Summary from "../components/default/Summary";
+import ProductTable from "../components/user/cart/ProductTable";
 
 export default {
   name: 'CartPage',
@@ -18,7 +17,7 @@ export default {
   head:{
     title: "Cart - Asthar Bazar - Promises 100% Reliance"
   },
-  components: { Header, FilterProducts, ProductList, Summary },
+  components: { Header, ProductTable, Summary },
   data () {
     return {
       pages: [
