@@ -34,10 +34,11 @@ export default {
  .th {
    flex-basis: 0;
    flex-grow: 1;
+   display: flex;
+   justify-content: center;
  }
  .th0 {
    flex-grow: 2;
-   display: flex;
-   justify-content: start;
+   justify-content: flex-start;
  }
 </style>
