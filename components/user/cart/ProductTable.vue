@@ -2,17 +2,20 @@
   <div :class="className" class="product-table-wrapper">
     <table class="product-table">
       <TableHeader />
+      <TableBody />
+
     </table>
   </div>
 </template>
 
 <script>
 import TableHeader from "./product_table/TableHeader";
+import TableBody from "./product_table/TableBody";
 
 export default {
   name: "ProductTable",
   props: ['className'],
-  components: {TableHeader},
+  components: {TableHeader, TableBody},
   data(){
     return {
     }
