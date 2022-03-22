@@ -3,7 +3,6 @@
     <table class="product-table">
       <TableHeader />
       <TableBody />
-
     </table>
   </div>
 </template>
@@ -29,5 +28,34 @@ export default {
 }
 .product-table{
   width: 100%;
+}
+@media (min-width: 766px){
+  .product-table{
+    border-bottom: 1px solid #888;
+  }
+}
+@media (max-width:765px){
+  .product-table-wrapper{
+    width: 100vw;
+    overflow-x: scroll;
+  }
+  .product-table{
+    width: 766px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+  border-radius:10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius:10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
 }
 </style>
