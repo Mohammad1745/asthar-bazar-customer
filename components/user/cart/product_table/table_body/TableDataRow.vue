@@ -5,11 +5,14 @@
     <td class="td">{{ product.type }}</td>
     <td class="td">৳ {{ product.price }}</td>
     <td class="td td-quantity">
-      <button @click="decreaseQuantity">-</button>
+      <button @click="decreaseQuantity" class="iterator-button">-</button>
       <span>{{ product.quantity }}</span>
-      <button @click="increaseQuantity">+</button>
+      <button @click="increaseQuantity" class="iterator-button">+</button>
     </td>
     <td class="td">৳ {{ product.totalPrice }}</td>
+    <td class="td td-action">
+      <button class="delete-button"><i class="fas fa-trash"></i></button>
+    </td>
   </tr>
 </template>
 
@@ -47,9 +50,20 @@ tr {
   font-size: 1.25rem;
   font-weight: bold;
 }
-.td-quantity button,
+.iterator-button,
 .td-quantity span {
   background: #edf4f6;
   padding: 0.5rem;
+}
+.delete-button{
+  transition: 0.25s;
+}
+.delete-button:hover{
+  background: #edf4f6;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+}
+.td-action{
+  flex-grow: 0.25;
 }
 </style>

@@ -8,6 +8,7 @@
     >
       {{ header }}
     </th>
+    <th class="th th-action"></th>
   </tr>
  </thead>
 </template>
@@ -40,5 +41,8 @@ export default {
  .th0 {
    flex-grow: 2;
    justify-content: flex-start;
+ }
+ .th-action{
+   flex-grow: 0.25;
  }
 </style>

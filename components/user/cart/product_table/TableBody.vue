@@ -34,8 +34,10 @@ export default {
     },
     decreaseQuantity(id){
       this.products.filter(product => product.id === id).forEach(product => {
-        product.quantity--
-        product.totalPrice = (product.price * product.quantity).toFixed(2)
+        if (product.quantity > 1) {
+          product.quantity--
+          product.totalPrice = (product.price * product.quantity).toFixed(2)
+        }
       })
     }
   }
