@@ -4,17 +4,19 @@
       <TableHeader />
       <TableBody />
     </table>
+    <TableButtons />
   </div>
 </template>
 
 <script>
 import TableHeader from "./product_table/TableHeader";
 import TableBody from "./product_table/TableBody";
+import TableButtons from "./product_table/TableButtons";
 
 export default {
   name: "ProductTable",
   props: ['className'],
-  components: {TableHeader, TableBody},
+  components: {TableHeader, TableBody, TableButtons},
   data(){
     return {
     }
