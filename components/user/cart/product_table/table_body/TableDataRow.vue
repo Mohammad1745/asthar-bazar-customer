@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 tr {
   display: flex;
   justify-content: space-between;
@@ -43,12 +43,16 @@ tr {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.td-name {
-  flex-grow: 2;
-  justify-content: flex-start;
-  font-size: 1.25rem;
-  font-weight: bold;
+
+  &-name {
+    flex-grow: 2;
+    justify-content: flex-start;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  &-action{
+    flex-grow: 0.25;
+  }
 }
 .iterator-button,
 .td-quantity span {
@@ -62,8 +66,5 @@ tr {
   background: #edf4f6;
   padding: 0.5rem 0.8rem;
   border-radius: 50%;
-}
-.td-action{
-  flex-grow: 0.25;
 }
 </style>
