@@ -1,16 +1,18 @@
 <template>
   <div :class="className" class="price-summary">
     <Coupon />
+    <PriceCalculation />
   </div>
 </template>
 
 <script>
 import Coupon from "./price_summary/Coupon";
+import PriceCalculation from "./price_summary/PriceCalculation";
 
 export default {
   name: "PriceSummary",
   props: ['className'],
-  components: {Coupon},
+  components: {PriceCalculation, Coupon},
 }
 </script>
 
