@@ -32,4 +32,10 @@ export default {
       }
     }
   }
+
+  @media (max-width:765px){
+    .table-buttons {
+      justify-content: flex-start;
+    }
+  }
 </style>

@@ -30,11 +30,7 @@ export default {
 }
 .product-table{
   width: 100%;
-}
-@media (min-width: 766px){
-  .product-table{
-    border-bottom: 1px solid #888;
-  }
+  border-bottom: 1px solid #888;
 }
 @media (max-width:765px){
   .product-table-wrapper{
