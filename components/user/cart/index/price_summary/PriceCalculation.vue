@@ -15,7 +15,7 @@
         <div class="price__calculation__amount">৳  {{ subtotal }}</div>
       </div>
     </div>
-    <NuxtLink class="bg-green block text-sm font-bold uppercase text-center py-5" to="/cart">Proceed to Checkout</NuxtLink>
+    <NuxtLink class="bg-green block text-sm font-bold uppercase text-center py-5" to="/cart/checkout">Proceed to Checkout</NuxtLink>
   </div>
 </template>
 

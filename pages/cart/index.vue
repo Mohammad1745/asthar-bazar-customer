@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Header from "../components/default/Header";
-import Summary from "../components/default/Summary";
-import ProductTable from "../components/user/cart/ProductTable";
-import PriceSummary from "../components/user/cart/PriceSummary";
+import Header from "../../components/default/Header";
+import Summary from "../../components/default/Summary";
+import ProductTable from "../../components/user/cart/index/ProductTable";
+import PriceSummary from "../../components/user/cart/index/PriceSummary";
 
 export default {
   name: 'CartPage',
