@@ -1,6 +1,6 @@
 <template>
   <div :class="className">
-    <button @mouseenter="showOptions">{{ buttonName }}  <i class="fas fa-caret-down"></i></button>
+    <button @click="toggleOptions">{{ buttonName }}  <i class="fas fa-caret-down"></i></button>
     <div v-if="show" class="option-list shadow-2xl" @mouseleave="hideOptions">
       <button
         v-for="(option, i) in options"
@@ -33,8 +33,12 @@ export default {
     hideOptions(){
       this.show = false;
     },
+    toggleOptions(){
+      this.show ? this.hideOptions() : this.showOptions();
+    },
     selectOption(option){
       this.buttonName = option.name
+      this.hideOptions()
     }
   }
 }

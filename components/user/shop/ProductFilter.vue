@@ -1,7 +1,7 @@
 <template>
   <div :class="className" class="filter">
     <DepartmentFilter className="" />
-    <div class="flex justify-between gap-5">
+    <div class="flex justify-end gap-5">
       <ProductSorting />
       <FilterByCategory />
       <FilterByType />
@@ -36,6 +36,12 @@ export default {
   padding: 2rem 5rem;
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
+  gap: 1rem;
+}
+
+@media (max-width: 990px){
+  .filter {
+    flex-direction: column;
+  }
 }
 </style>
