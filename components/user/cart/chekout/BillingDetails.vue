@@ -1,10 +1,12 @@
 <template>
   <div :class="className" class="billing-details">
     <PriceCalculation />
-    <div class="grid grid-cols-2">
+    <div class="grid  md:grid-cols-2 grid-cols-1">
       <RadioInput header="Payment Options" :options="paymentOptions" :default="paymentOptions[0].value"/>
       <RadioInput header="Shipping Methods" :options="shippingMethods" :default="shippingMethods[0].value" />
     </div>
+    <p class="italic text-sm text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, aspernatur, doloribus et excepturi fugit inventore magni mollitia perferendis provident quidem quis rem suscipit tenetur vel voluptas voluptatem? Iure, totam?</p>
+    <button class="bg-green block text-sm font-bold uppercase text-center w-full my-16 py-5">Place Order</button>
   </div>
 </template>
 
