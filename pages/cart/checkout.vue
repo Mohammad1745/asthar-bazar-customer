@@ -1,9 +1,9 @@
 <template>
   <div class="">
     <Header title="Checkout" :pages="pages"/>
-    <div class="main bg-white">
-      <BillingForm  class-name="basis-0 flex-grow" />
-      <BillingDetails  class-name="basis-0 flex-grow" />
+    <div class="main bg-white flex justify-between gap-20">
+      <BillingForm  class-name="flex-1" />
+      <BillingDetails  class-name="flex-1" />
     </div>
     <Summary className="mt-20"/>
   </div>
@@ -36,10 +36,7 @@ export default {
 
 <style lang="scss" scoped>
  .main {
-   display: flex;
-   justify-content: space-between;
    padding: 5vw;
-   gap: 5rem;
  }
  @media (max-width:1499px) {
    .main {
