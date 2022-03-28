@@ -7,11 +7,11 @@
       <div class="news__list__item">
         <div class="news__list__item__title">{{ news.title }}</div>
         <div class="news__list__item__date">Date: {{ news.date }}</div>
-        <NuxtLink :to="'/news/details'+news.id">
+        <NuxtLink :to="`/news/${news.id}`">
           <img src="~assets/images/home_slider_1.jpg" class="news__list__item__banner" alt="News">
         </NuxtLink>
         <div class="news__list__item__body">{{ news.body.substring(0,100) }}...</div>
-        <NuxtLink :to="'/news/details'+news.id" class="news__list__item__details-btn">Read more...</NuxtLink>
+        <NuxtLink :to="`/news/${news.id}`" class="news__list__item__details-btn">Read more...</NuxtLink>
       </div>
     </div>
   </div>
