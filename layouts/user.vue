@@ -30,6 +30,7 @@
           {page: "/shop", title: "SHOP"},
           {page: "/cart", title: "CART"},
           {page: "/news", title: "NEWS"},
+          {page: "/account", title: "ACCOUNT"},
         ]
       }
     }
