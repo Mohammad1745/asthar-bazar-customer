@@ -1,9 +1,10 @@
 <template>
   <tr :class="{subscribed: subPackage.subscribed}">
-    <td class="td td-name">{{ subPackage.name }}</td>
+    <td class="td td--name">{{ subPackage.name }}</td>
     <td class="td">৳ {{ subPackage.charge }}</td>
     <td class="td">৳ {{ subPackage.capacity }}</td>
-    <td class="td">{{ subPackage.subscribed ? 'Subcribed' : '---------' }}</td>
+    <td v-if="subPackage.subscribed" class="td">Subscribed</td>
+    <td v-else class="td td--btn">Subscribe Package</td>
   </tr>
 </template>
 
@@ -35,8 +36,18 @@ tr {
   justify-content: center;
   align-items: center;
 
-  &-name {
+  &--name {
     justify-content: flex-start;
+  }
+  &--btn {
+    cursor: pointer;
+    border-radius: 2rem;
+    border: 2px solid transparent;
+
+    &:hover {
+      border-color: #bbe432;
+      background-color: rgba(0, 128, 0, 0.1);
+    }
   }
 }
 </style>
