@@ -27,8 +27,8 @@
 import Header from "../../components/default/Header";
 import Summary from "../../components/default/Summary";
 import Details from "../../components/user/account/profile/Details";
-import ProfileForm from "../../components/user/account/index/ProfileForm";
-import PasswordForm from "../../components/user/account/index/PasswordForm";
+import ProfileForm from "../../components/user/account/profile/ProfileForm";
+import PasswordForm from "../../components/user/account/profile/PasswordForm";
 
 
 export default {
