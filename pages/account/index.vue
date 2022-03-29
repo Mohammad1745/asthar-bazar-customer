@@ -26,7 +26,7 @@ export default {
       ],
       infos: [
         {title: "Profile", value: "25%", url: "/account/profile"},
-        {title: "Referral", value: "5", url: "/account"},
+        {title: "Referral", value: "5", url: "/account/referral"},
         {title: "Wallet", value: "৳  25", url: "/account"},
         {title: "Orders", value: "10", url: "/account"},
       ]

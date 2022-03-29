@@ -39,7 +39,11 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-clipboard',
   ],
+  clipboard: {
+    autoSetContainer: true
+  },
 
   fontawesome: {
     icons:{

@@ -22,9 +22,7 @@ export default {
   props: ['className', 'infos'],
   data() {
     return {
-      subtotal: 294,
-      coupon: 10,
-      totalPrice: 284
+
     }
   }
 }
