@@ -2,6 +2,7 @@
   <div class="">
     <Header title="Wallet" :pages="pages"/>
     <Details class-name="bg-white" :wallet="wallet"/>
+    <SubscriptionPackageTable />
     <Explanation />
     <Summary className=""/>
   </div>
@@ -12,6 +13,7 @@ import Header from "../../components/default/Header";
 import Summary from "../../components/default/Summary";
 import Details from "../../components/user/account/wallet/Details";
 import Explanation from "../../components/user/account/wallet/Explanation";
+import SubscriptionPackageTable from "../../components/user/account/wallet/SubscriptionPackageTable";
 
 
 export default {
@@ -20,7 +22,7 @@ export default {
   head:{
     title: "Wallet  - Asthar Bazar - Promises 100% Reliance"
   },
-  components: {Header, Summary, Details, Explanation },
+  components: {Header, Summary, Details, Explanation, SubscriptionPackageTable },
   data () {
     return {
       pages: [
