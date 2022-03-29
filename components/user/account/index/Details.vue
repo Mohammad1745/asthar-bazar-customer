@@ -69,6 +69,7 @@ export default {
       }
       &:hover {
         border-color: #bbe432;
+        background-color: rgba(0, 128, 0, 0.1);
       }
     }
   }
