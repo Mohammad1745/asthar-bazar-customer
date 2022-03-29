@@ -7,6 +7,7 @@
       :code="referralCode"
       :count="referralCount"
     />
+    <Explanation />
     <Summary className=""/>
   </div>
 </template>
@@ -15,6 +16,7 @@
 import Header from "../../components/default/Header";
 import Summary from "../../components/default/Summary";
 import Details from "../../components/user/account/referrals/Details";
+import Explanation from "../../components/user/account/referrals/Explanation";
 
 
 export default {
@@ -23,7 +25,7 @@ export default {
   head:{
     title: "Profile - Asthar Bazar - Promises 100% Reliance"
   },
-  components: {Header, Summary, Details },
+  components: {Header, Summary, Details, Explanation },
   data () {
     return {
       pages: [
