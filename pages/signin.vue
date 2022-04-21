@@ -14,7 +14,8 @@
     </div>
     <div class="flex justify-center py-2">Or</div>
     <div class="">
-      <a class="bg-green-inverted text-sm font-bold flex justify-center items-center w-full h-16" href="">
+      <a class="bg-green-inverted text-sm font-bold flex justify-center items-center w-full h-16"
+         :href='backendUrl+"/auth/redirect?provider=google"'>
         <i class="fab fa-google text-red-400 pr-2"></i> SIGN IN WITH GOOGLE
       </a>
     </div>
@@ -22,6 +23,8 @@
 </template>
 
 <script>
+import {BACKEND_URL} from "../helpers/core-constants";
+
 export default {
   name: 'SignInPage',
   head:{
@@ -29,6 +32,7 @@ export default {
   },
   data() {
     return {
+      backendUrl: BACKEND_URL,
       phone: '',
       password: ''
     }
